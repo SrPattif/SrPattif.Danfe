@@ -3,8 +3,6 @@ name: Publish to Nuget
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   pack-push:
@@ -18,7 +16,7 @@ jobs:
     - name: .NET 5 setup
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.101
+        dotnet-version: 8.x
 
     - name: Package generation
       run: dotnet pack ${{ env.CAMINHO_PROJETO }} -c Release -o out
