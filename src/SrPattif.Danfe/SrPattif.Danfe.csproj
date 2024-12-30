@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	  
+    <PackageId>SrPattif.Danfe</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>SrPattif</Authors>
+    <Company></Company>
+    <PackageTags>Danfe;NFe;Nota Fiscal</PackageTags>
+    <Description>
+      Biblioteca para geração de DANFE através de XML de NFe.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PDFClown" Version="0.1.2" />
+  </ItemGroup>
+
+</Project>
