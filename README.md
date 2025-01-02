@@ -11,7 +11,11 @@
 <i>e mais em breve!</i>
 
 ## ⬇️ Instalação via NuGet
-Instale a versão mais atual da biblioteca no NuGet:
+[![Nuget count](http://img.shields.io/nuget/v/SrPattif.Danfe.svg)](http://www.nuget.org/packages/SrPattif.Danfe/)
+[![Nuget downloads](https://img.shields.io/nuget/dt/SrPattif.Danfe.svg)](http://www.nuget.org/packages/SrPattif.Danfe/)
+
+
+<b>Instale a versão mais atual da biblioteca no NuGet:</b>
 
 <details open>
 <summary><b>Package Manager</b></summary>
