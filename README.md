@@ -13,9 +13,27 @@
 ## ⬇️ Instalação via NuGet
 Instale a versão mais atual da biblioteca no NuGet:
 
+<details open>
+<summary><b>Package Manager</b></summary>
+	
  ```
  > Install-Package SrPattif.Danfe
  ```
+</details>
+<details>
+<summary><b>.NET CLI</b></summary>
+	
+ ```
+ > dotnet add package SrPattif.Danfe --version 1.0.0
+ ```
+</details>
+<details>
+<summary><b>PackageReference</b></summary>
+	
+ ```xml
+ <PackageReference Include="SrPattif.Danfe" Version="1.0.0" />
+ ```
+</details>
 
 ## 🖇️ Exemplos de uso
 ### Obter model a partir de arquivo XML
