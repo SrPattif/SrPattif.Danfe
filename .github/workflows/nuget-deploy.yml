@@ -13,10 +13,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: .NET 5 setup
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 8.x
+
+    - name: Update version with build ID
+      run: |
+        BUILD_VERSION="1.0.0.${{ github.run_number }}"
+        sed -i "s|<Version>.*</Version>|<Version>${BUILD_VERSION}</Version>|" ${{ env.CAMINHO_PROJETO }}
 
     - name: Package generation
       run: dotnet pack ${{ env.CAMINHO_PROJETO }} -c Release -o out
